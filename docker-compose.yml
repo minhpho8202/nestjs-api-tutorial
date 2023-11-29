@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  nestjs:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: nestjs
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - "5431:5432"
